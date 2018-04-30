@@ -1,0 +1,29 @@
+body {
+	width: 50%;
+	margin: 100px auto;
+	padding: 10px;
+	border: 1px solid #eee;
+}
+article h1 {
+	font-size: 40px;
+}
+.float {
+	overflow: hidden;
+}
+.float p {
+	float: left;
+	margin-right: 40px;
+}
+.float p span {
+	margin-right: 10px;
+	font-weight: 800;
+}
+.float p a {
+	color: blue;
+}
+p {
+	margin-top: 0;
+}
+h4 {
+	margin-bottom: 0;
+}

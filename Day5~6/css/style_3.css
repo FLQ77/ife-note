@@ -1,0 +1,54 @@
+body {
+	width: 80%;
+	margin: 100px auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+article {
+	background: #858585;
+
+}
+article h1 {
+	margin-left: 10px;
+	padding: 15px 0;
+	font-size: 20px;
+	color: #fff;
+}
+section {
+	height: 100px;
+	display: flex;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+}
+section h2 {
+	padding: 0 10px;
+	margin-bottom: 1px;
+	background: #d6d6d6;
+	font-size: 16px;
+	line-height: 100px;
+}
+section div {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.float {
+	overflow: hidden;
+}
+.float p {
+	float: left;
+	margin-right: 40px;
+}
+.float p span {
+	margin-right: 10px;
+	font-weight: 800;
+}
+.float p a {
+	color: blue;
+}
+section div div {
+	display: flex;
+	font-size: 15px;
+}
