@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+}
+.box1 {
+	width: 100%;
+	height: 200px;
+	background: #aaa;
+}
+.box1-left {
+	width: 30%;
+	height: 200px;
+	float: left;
+	background: red;
+}
+.box1-right {
+	width: 70%;
+	height: 200px;
+	float: left;
+	background: blue;
+}
+
+/**/
+.box2 {
+    width: 100%;
+    height: 200px;
+	background: #aaa;
+}
+.box2-left {
+	position: absolute;
+	width: 30%;
+	height: 200px;
+	background: red;
+}
+.box2-right {
+	width: 70%;
+	height: 200px;
+	position: absolute;
+	right: 0;
+	background: blue;
+}
+/**/
+.box3 {
+    width: 100%;
+    height: 200px;
+	background: #aaa;
+	display: flex;
+}
+.box3-left {
+	height: 200px;
+	background: red;
+	flex: 3;
+}
+.box3-right {
+	height: 200px;
+	background: blue;
+	flex: 7;
+}
