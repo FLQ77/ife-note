@@ -1,65 +1,89 @@
-
+/*box1 float*/
 .box1 {
 	height: 200px;
 	background: #aaa;
 }
 .box1-left {
 	float: left;
-	width: 300px;
+	width: 200px;
 	height: 200px;
 	background: red;
 }
-.box1-right {
+.box1-mid {
 	height: 200px;
-	overflow: hidden;  /*固定宽度采用overflow为hidden或auto*/
+	overflow: hidden;
+	background: green;
+}
+.box1-right {
+	float: right;
+	width: 200px;
+	height: 200px;
 	background: blue;
 }
-/*box2*/
+/*box2 position*/
 .box2 {
+	position: relative;
 	height: 200px;
 	background: #aaa;
 }
 .box2-left {
 	position: absolute;
 	height: 200px;
-	width: 300px;
+	width: 200px;
 	background: red;
 }
 .box2-right {
+	position: absolute;
+	right: 0;
+	width: 200px;
 	height: 200px;
-	margin-left: 300px;
 	background: blue;
 }
-/*box3*/
+.box2-mid {
+	margin: 0 200px;
+	height: 200px;
+	background: green;
+}
+/*box3 flexbox*/
 .box3 {
-	display: flex;
 	height: 200px;
 	background: #aaa;
+	display: flex;
 }
 .box3-left {
+	width: 200px;
 	height: 200px;
-	width: 300px;
 	background: red;
 }
-.box3-right {
+.box3-mid {
 	flex: 1;
+	height: 200px;
+	background: green;
+}
+.box3-right {
+	width: 200px;
 	height: 200px;
 	background: blue;
 }
-/*box4  float*/
+/*box4 float*/
 .box4 {
 	height: 200px;
 	background: #aaa;
 }
-.box4-left {
-	float: right;    /*右边固定宽度，右浮动*/
-	width: 300px;
+.box4-left ,.box4-mid {
+	float: left;
 	height: 200px;
+	width: 200px;
+}
+.box4-left {
 	background: red;
+}
+.box4-mid {
+	background: green;
 }
 .box4-right {
 	height: 200px;
-	overflow: hidden;  /*固定宽度采用overflow为hidden或auto*/
+	overflow: hidden;
 	background: blue;
 }
 /*box5 position*/
@@ -70,29 +94,40 @@
 }
 .box5-left {
 	position: absolute;
-	right: 0;
-	width: 300px;
+	width: 200px;
 	height: 200px;
-	background: blue;
+	background: red;
+}
+.box5-mid {
+	position: absolute;
+	left: 200px;
+	width: 200px;
+	height: 200px;
+	background: green;
 }
 .box5-right {
 	height: 200px;
-	margin-right: 300px;
-	background: red;
+	margin-left: 400px;
+	background: blue;
 }
 /*box6 flexbox*/
 .box6 {
-	display: flex;
 	height: 200px;
 	background: #aaa;
+	display: flex;
 }
 .box6-left {
-	flex: 1;
+	width: 200px;
 	height: 200px;
 	background: red;
 }
+.box6-mid {
+	width: 200px;
+	height: 200px;
+	background: green;
+}
 .box6-right {
+	flex: 1;
 	height: 200px;
 	background: blue;
-	width: 300px;
 }
